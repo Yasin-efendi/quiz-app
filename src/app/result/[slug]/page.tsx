@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { useRouter, useParams } from 'next/navigation';
+import SafeHTML from '@/components/SafeHTML';
 
 interface Question {
   id: string;
@@ -82,7 +83,9 @@ export default function ResultPage() {
             const isCorrect = answers[i] === q.correctIndex;
             return (
               <div key={q.id} className="discussion-item">
-                <div className="discussion-question" dangerouslySetInnerHTML={{ __html: `Soal ${i + 1}: ${q.content}` }} />
+                {/* <div className="discussion-question" dangerouslySetInnerHTML={{ __html: `Soal ${i + 1}: ${q.content}` }} /> */}
+                <SafeHTML html={`Soal ${i + 1}: ${q.content}`} className="discussion-question" />
+
                 <p>Jawaban Anda: <strong style={{ color: isCorrect ? 'var(--success)' : 'var(--error)' }}>{q.options[answers[i]] || '-'}</strong></p>
                 <p className="discussion-correct">Jawaban Benar: {q.options[q.correctIndex]}</p>
                 {q.explanation && (

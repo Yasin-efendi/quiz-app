@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { useRouter, useParams } from 'next/navigation';
+import SafeHTML from '@/components/SafeHTML';
 
 interface Question {
   id: string;
@@ -74,8 +75,8 @@ export default function QuizPage() {
           <span className="quiz-progress">{answers.filter(a => a !== -1).length} dijawab</span>
         </div>
 
-        <div className="question-content" dangerouslySetInnerHTML={{ __html: currentQ.content }} />
-
+        {/* <div className="question-content" dangerouslySetInnerHTML={{ __html: currentQ.content }} /> */}
+        <SafeHTML html={currentQ.content} className="question-content" />
         <div className="options-list">
           {currentQ.options.map((opt, idx) => (
             <button
