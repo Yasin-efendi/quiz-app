@@ -1,5 +1,50 @@
 {
-  "subjects": [],
-  "meetings": [],
-  "questions": []
+  "subjects": [
+    {
+      "id": "subj-eng-01",
+      "slug": "bahasa-inggris",
+      "title": "Bahasa Inggris",
+      "description": "Latihan soal Ujian Sekolah Kelas 3 SD"
+    }
+  ],
+  "meetings": [
+    {
+      "id": "meet-eng-01",
+      "subjectId": "subj-eng-01",
+      "slug": "bahasa-inggris-numbers",
+      "title": "Numbers (Angka)"
+    },
+    {
+      "id": "meet-eng-02",
+      "subjectId": "subj-eng-01",
+      "slug": "bahasa-inggris-spelling",
+      "title": "Spelling (Ejaan)"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-01",
+      "meetingId": "meet-eng-01",
+      "content": "What is the English word for <b>\"Lima\"</b>?<br>A. Three B. Four C. Five D. Six",
+      "options": ["Three", "Four", "Five", "Six"],
+      "correctIndex": 2,
+      "explanation": "\"Lima\" dalam bahasa Inggris adalah <b>Five</b>."
+    },
+    {
+      "id": "q-02",
+      "meetingId": "meet-eng-01",
+      "content": "How do you spell <i>\"Sepuluh\"</i> in English?",
+      "options": ["Ten", "Twelve", "Twenty", "Thirteen"],
+      "correctIndex": 0,
+      "explanation": "\"Sepuluh\" dieja <b>Ten</b>."
+    },
+    {
+      "id": "q-03",
+      "meetingId": "meet-eng-02",
+      "content": "Which spelling is correct for <b>\"Buku\"</b>?<br>A. Bock B. Book C. Buk D. Bukk",
+      "options": ["Bock", "Book", "Buk", "Bukk"],
+      "correctIndex": 1,
+      "explanation": "Ejaan yang benar untuk \"Buku\" adalah <b>Book</b>."
+    }
+  ]
 }
