@@ -5,6 +5,12 @@
       "slug": "bahasa-inggris",
       "title": "Bahasa Inggris",
       "description": "Latihan soal Ujian Sekolah Kelas 3 SD"
+    },
+    {
+      "id": "mpuohchu-41knpr",
+      "slug": "matematika",
+      "title": "Matematika",
+      "description": "Pelajaran numerasi tingkat Sekolah Dasar"
     }
   ],
   "meetings": [
@@ -19,6 +25,12 @@
       "subjectId": "subj-eng-01",
       "slug": "bahasa-inggris-spelling",
       "title": "Spelling (Ejaan)"
+    },
+    {
+      "id": "mpuoi0g3-365mve",
+      "subjectId": "mpuohchu-41knpr",
+      "slug": "matematika-bilangan-bulat",
+      "title": "Bilangan bulat"
     }
   ],
   "questions": [
@@ -26,7 +38,12 @@
       "id": "q-01",
       "meetingId": "meet-eng-01",
       "content": "What is the English word for <b>\"Lima\"</b>?<br>A. Three B. Four C. Five D. Six",
-      "options": ["Three", "Four", "Five", "Six"],
+      "options": [
+        "Three",
+        "Four",
+        "Five",
+        "Six"
+      ],
       "correctIndex": 2,
       "explanation": "\"Lima\" dalam bahasa Inggris adalah <b>Five</b>."
     },
@@ -34,7 +51,12 @@
       "id": "q-02",
       "meetingId": "meet-eng-01",
       "content": "How do you spell <i>\"Sepuluh\"</i> in English?",
-      "options": ["Ten", "Twelve", "Twenty", "Thirteen"],
+      "options": [
+        "Ten",
+        "Twelve",
+        "Twenty",
+        "Thirteen"
+      ],
       "correctIndex": 0,
       "explanation": "\"Sepuluh\" dieja <b>Ten</b>."
     },
@@ -42,9 +64,27 @@
       "id": "q-03",
       "meetingId": "meet-eng-02",
       "content": "Which spelling is correct for <b>\"Buku\"</b>?<br>A. Bock B. Book C. Buk D. Bukk",
-      "options": ["Bock", "Book", "Buk", "Bukk"],
+      "options": [
+        "Bock",
+        "Book",
+        "Buk",
+        "Bukk"
+      ],
       "correctIndex": 1,
       "explanation": "Ejaan yang benar untuk \"Buku\" adalah <b>Book</b>."
+    },
+    {
+      "id": "mpuolgjn-tw7bae",
+      "meetingId": "mpuoi0g3-365mve",
+      "content": "Hasil dari -12 - (-5) + 8 adalah...",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ingat aturan pengurangan: mengurangi dengan angka negatif sama artinya dengan menjumlahkan dengan angka positif (-a - (-b) = -a + b).\n-12 - (-5) = -12 + 5 = -7\nSetelah itu, selesaikan dengan angka terakhir: -7 + 8 = 1\nJawaban: 1"
     }
   ]
 }
